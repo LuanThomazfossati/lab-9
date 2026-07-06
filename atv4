@@ -1,0 +1,11 @@
+x = input("numero: ")
+num = []
+num.append(x)
+if len(x) == 8:
+    x = "9" + x
+num = []
+num.append(x)
+if x[5] != "-":
+    x = x[:5] + "-" + x[5:]
+
+print(x)
