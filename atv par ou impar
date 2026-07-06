@@ -1,0 +1,25 @@
+pares = []
+impares = []
+p = int(input("Informe a quantidade de numeros: "))
+if p < 0 or p < 4:
+    print("Valor inválido!")
+else:
+    lista = []
+    for i in range(0, p):
+        num = int(input("Numero: "))
+        lista.append(num)
+
+    print(f"Lista completa\n{lista}")
+    print(f"\nTrês primeiros\n{lista[0], lista[1], lista[2]}")
+    print(f"2 ultimos\n{lista[p - 2], lista[p - 1]}")
+    lista.reverse()
+    print(f"Lista Invertida\n{lista}")
+
+for i in range(0, p):
+    if lista[i] % 2 == 0:
+        pares.append(lista[i])
+    else:
+        impares.append(lista[i])
+    print(f"Pares\n{pares}")
+    print(f"Impares\n{impares}")    
+
