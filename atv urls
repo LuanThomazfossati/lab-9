@@ -1,0 +1,10 @@
+x = int(input("Informe a quantidade de urls: "))
+urls = []
+urlsC = []
+for i in range(0, q):
+    x = str(input("Informe a url: "))
+    urls.append(x)
+    urlsC.append(f"www.{x}.com")
+print(urls)
+print(urlsC)
+
