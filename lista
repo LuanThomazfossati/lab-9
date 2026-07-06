@@ -1,0 +1,23 @@
+
+p1 = int(input("Informe a quantidade de elementos da l1: "))
+for i in range(p1):
+    x = int(input("Valor: "))
+    l1.append(x)
+
+p2 = int(input("Informe a quantidade de elementos da l2: "))
+for i in range(p2):
+    y = int(input("Valor: "))
+    l2.append(y)
+
+i = 0
+while i < len(l1) or i < len(l2):
+    if i < len(l1):
+        l3.append(l1[i])
+
+    if i < len(l2):
+        l3.append(l2[i])
+    i += 1
+print(f"Lista 1: {l1}")
+print(f"Lista 2: {l2}")
+print(f"Lista 3: {l3}")
+
