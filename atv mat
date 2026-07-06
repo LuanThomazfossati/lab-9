@@ -1,0 +1,14 @@
+for i in range(100):
+    num = randint(-100, 100)
+    numeros.append(num)
+    soma += num
+media = soma / 100
+ord = sorted(numeros)
+print(f"Lista organizada\n{ord}")
+print(f"Lista Normal\n{numeros}")
+print(f"Indice maior {numeros.index(max(numeros))}")
+print(f"Indice menor {numeros.index(min(numeros))}")
+print(f"Soma {soma}")
+print(f"Média {media}")
+
+
