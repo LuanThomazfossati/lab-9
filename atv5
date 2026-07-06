@@ -1,0 +1,9 @@
+frase = input("Frase: ").lower()
+quant = 0
+
+for letra in range(len(frase)):
+    if frase[letra] in "aeiou":
+        quant += 1
+        print(frase[letra], letra)
+
+print(quant)
